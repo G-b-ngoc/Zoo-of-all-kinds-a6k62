@@ -1,0 +1,209 @@
+/* Thiết lập chung */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffc0cb; /* Nền hồng */
+  color: #333;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+}
+
+.profile-details h1 {
+  font-size: 24px;
+  color: #ff69b4; /* Màu hồng đậm cho tiêu đề */
+}
+
+.profile-details p {
+  font-size: 16px;
+  color: #555;
+}
+
+.actions button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.like-btn {
+  background-color: #ff69b4; /* Nút thích màu hồng */
+  color: white;
+}
+
+.message-btn {
+  background-color: #18cca5;
+  color: white;
+}
+
+.nav-bar {
+  background-color: white;
+  padding: 10px;
+  margin-top: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-bar ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.nav-bar ul li {
+  margin: 0 15px;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #9c1d5d; /* Liên kết màu hồng */
+}
+
+.nav-bar ul li a:hover {
+  color: #f80562; /* Hiệu ứng hover */
+}
+
+.section {
+  background-color: white;
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  animation: fadeIn 1s ease-in-out; /* Hiệu ứng động */
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ff69b4;
+  color: white;
+  margin-top: 20px;
+}
+
+.album {
+  border-radius: 10px;
+}
+
+/*Bài viết*/
+
+.logo-container {
+  text-align: center;
+  background-color: rgb(247, 247, 247);
+  border-radius: 50%;
+  padding: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.logo-container:hover {
+  transform: scale(1.05);
+}
+
+.letters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.letter {
+  background-color: #fef3c7;
+  margin: 0 5px;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.letter:nth-child(1) {
+  background-color: #f87171;
+}
+.letter:nth-child(2) {
+  background-color: #34d399;
+}
+.letter:nth-child(3) {
+  background-color: #60a5fa;
+}
+.letter:nth-child(4) {
+  background-color: #fbbf24;
+}
+.letter:nth-child(5) {
+  background-color: #a78bfa;
+}
+
+.letter:hover {
+  background-color: #fef3c7;
+  transform: rotate(10deg);
+}
+
+.school-name {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #d97706;
+  letter-spacing: 2px;
+}
+
+.footprints {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.foot {
+  width: 30px;
+  height: 30px;
+  background-color: #60a5fa;
+  border-radius: 50%;
+  position: relative;
+}
+
+.left-foot {
+  background-color: #60a5fa;
+}
+
+.right-foot {
+  background-color: #a78bfa;
+}
+
+.foot::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: inherit;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+/* Hiệu ứng động khi cuộn */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

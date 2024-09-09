@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fcb8d2; /* Pink Background */
+}
+
+.container {
+  text-align: center;
+}
+
+.header {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ee1266;
+  margin-bottom: 30px;
+  animation: fadeInText 2s ease-in-out;
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo-container {
+  background-color: white;
+  border-radius: 50%;
+  padding: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo-container:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.letters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  animation: float 4s infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.letter {
+  margin: 0 5px;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.6s ease;
+}
+
+/* Original Colors */
+.letter-a {
+  background-color: #f87171; /* Red */
+}
+
+.letter-6 {
+  background-color: #34d399; /* Green */
+}
+
+.letter-k {
+  background-color: #60a5fa; /* Blue */
+}
+
+.letter-2 {
+  background-color: #a78bfa; /* Purple */
+}
+
+/* Hover effect to rotate and scale */
+.letter:hover {
+  transform: rotate(-15deg) scale(1.2);
+}
+
+.school-name {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #d97706;
+  letter-spacing: 2px;
+}
+
+.footprints {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.foot {
+  width: 30px;
+  height: 30px;
+  background-color: #60a5fa;
+  border-radius: 50%;
+  position: relative;
+  animation: bounce 2s infinite ease-in-out;
+}
+
+.left-foot {
+  background-color: #60a5fa;
+}
+
+.right-foot {
+  background-color: #a78bfa;
+}
+
+.foot::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: inherit;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
